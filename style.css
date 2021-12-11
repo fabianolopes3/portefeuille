@@ -21,6 +21,9 @@
   --font-secundary:"josefin slab", serif;
   --font-action:"milish", serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 /*--------------------------------*/
 
 /*---debut menu hamburg--*/
@@ -555,7 +558,7 @@ header{
   align-items: center;
 }
 .budget-wrapper {
-  width: 60%;
+  width: 70%;
   height: 50%;
   background-color: #ffffff99;
   border-radius: 5px;
@@ -659,6 +662,15 @@ footer {
   bottom: 3rem;
   width: 3rem;
   height: 3rem;
+  border-radius: 3rem;
+  background: #6a3093;
+  background: linear-gradient(to left, #a044ff, #6a3093);
+  background: -webkit-linear-gradient(to right, #a044ff, #6a3093);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  box-shadow: 0 0 .1rem 0.6rem #00000019;
 }
 
 /*---- le fin de la contact-session --*/

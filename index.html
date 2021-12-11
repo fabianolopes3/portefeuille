@@ -20,7 +20,7 @@
       <span>Fermer</span>
     </div><!--hamburguer-->
 
-    <header>
+    <header id="home">
        <div class="img-wrapper">
         <img src="images/img-header.jpg" alt="">
        </div><!--img-wrapper-->
@@ -37,11 +37,11 @@
     <aside class="sidebar">
       <nav>
         <ul class="menu">
-          <li class="menu-item"><a href="" class="menu-link">Home</a></li>
-          <li class="menu-item"><a href="" class="menu-link">Connaissance</a></li>
-          <li class="menu-item"><a href="" class="menu-link">Projets</a></li>
-          <li class="menu-item"><a href="" class="menu-link">Contact</a></li>
-          <li class="menu-item"><a href="" class="menu-link">Devi</a></li>
+          <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+          <li class="menu-item"><a href="#conhecimentos" class="menu-link">Connaissance</a></li>
+          <li class="menu-item"><a href="#projets" class="menu-link">Projets</a></li>
+          <li class="menu-item"><a href="#contact" class="menu-link">Contact</a></li>
+          <li class="menu-item"><a href="#devi" class="menu-link">Devi</a></li>
         </ul>
       </nav>
       <div class="social-media">
@@ -56,7 +56,7 @@
       .conhecimento-text>p{lorem30})*6--><!--formas de montar um leyout sem digitar tudo-->
 
 
-    <section class="sessao-conhecimentos">
+    <section id="conhecimentos" class="sessao-conhecimentos">
       <div class="sessao-header">
         <h1>Connaissance</h1>
       </div>
@@ -145,7 +145,7 @@
       </div><!--conhecimentos-->
     </section><!--sessao-conhecimentos-->
 
-    <section class="sessao-projetos">
+    <section id="projets" class="sessao-projetos">
       <div class="sessao-header">
         <h1>Projets</h1>
       </div>
@@ -200,7 +200,7 @@
 
     </section><!--sessao-projetos-->
     
-    <section class="contact-session">
+    <section id="contact" class="contact-session">
       <div class="contact-wrapper">
         <div class="contac-left"></div>
         <div class="contac-hight">
@@ -226,7 +226,7 @@
 
       </div><!--contact-wrapper-->
     </section><!--contact-session-->
-    <section class="budget-session">
+    <section id="devi" class="budget-session">
       <div class="budget-wrapper">
         <h1>Demandez votre devis gratuit</h1>
         <form action="">
@@ -246,7 +246,8 @@
             </div>
           </div>
           <label for="date-limite">Date limite</label>
-          <input type="range" name="date-limite" id="date-limite">
+          <input type="range" name="date-limite" id="date-limite" min="1" max="12">
+          <label id="prix" for="">€ 0.00</label>
           <button class="btn btn-budget" type="submit">Envoyer</button>
         </form>
       </div><!--budget-wrapper-->
@@ -266,7 +267,7 @@
         </div>
       </div>
     </footer>
-    <a href="" id="link-top">
+    <a href="#home" id="link-top">
       <i class="fas fa-arrow-up"></i>
     </a>
 
